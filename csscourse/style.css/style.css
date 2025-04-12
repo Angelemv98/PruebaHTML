@@ -1,0 +1,90 @@
+/* 
+Manera en la que se selecciona algo por ID
+*/
+#titulo{
+    color: tomato;
+}
+
+/*Manera de elegir classe dentro de etiquetas*/
+p.texto{
+    color: blueviolet;
+}
+
+p.especial{
+    color: orange;
+}
+/*Selector de p dentro de un div*/
+div p{
+    color: aquamarine;
+}
+div h2, div h3{
+    color: brown;
+}
+
+/*Selector global*/
+* {
+    font-size: 34;
+    /* color: black; */
+}
+
+/*
+COLOR POR HEXA
+.color{
+    color: #aa1a60;
+}
+*/
+/*COLOR POR RGB*/
+.color{
+    color: rgb(200, 100, 30);
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 1rem;
+    /* border: 5px rgb(105, 69, 69) outset; */
+    padding: 20px;
+    margin: 0px 30px;
+    text-align: center;
+}
+
+#fondo{
+    background-color: rgba(255, 0, 0);
+    /* opacity: 0.4; */
+    height: 400px;
+    background-image: url('cover.webp');
+    background-size: contain;
+}
+
+#margen{
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 10px;
+    border: 1px black solid;
+    outline: 1px red solid;
+
+}
+.text{
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 2px 5px gray;
+}
+a:link{
+    color: orange;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: aqua;
+}
+
+ul{
+    background-color: gray;
+    /* list-style-position: inside; */
+    list-style-type: georgian;
+}
