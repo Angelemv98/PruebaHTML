@@ -24,6 +24,8 @@ div h2, div h3{
 /*Selector global*/
 * {
     font-size: 34;
+    font-family: "Open Sans", sans-serif;
+
     /* color: black; */
 }
 
@@ -64,7 +66,6 @@ COLOR POR HEXA
 }
 .text{
     font-size: 50px;
-    font-family: "Open Sans", sans-serif;
     text-align: center;
     text-decoration: overline;
     text-shadow: 3px 2px 5px gray;
@@ -87,4 +88,84 @@ ul{
     background-color: gray;
     /* list-style-position: inside; */
     list-style-type: georgian;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td{
+    border: solid 1px lightblue;
+    padding: 5px;
+
+}
+
+tr:nth-child(even){
+    background-color: lightcyan;
+}
+
+th{
+    background-color: lightcoral;
+    text-align: left;
+    color: white;
+}
+
+tr:hover{
+    cursor: pointer;
+    background-color: #AAA;
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden;*/
+    max-width: 300px;
+    background-color: chocolate;
+} 
+
+.inline{
+    display: inline;
+}
+
+#position{
+    position: sticky;
+    left: 20px ;
+    top: 25px;
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float: right;
+}
+
+.container{
+    height: 200px;
+}
+
+.column{
+    margin: 0;
+    padding: 10px 0px;
+    width: 33%;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: azure;    
+}
+
+.center{
+    padding: 50px 0px;
+    width: 200px;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    text-align: center;
 }
