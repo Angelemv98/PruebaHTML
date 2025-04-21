@@ -78,6 +78,22 @@
 // console.log(litaToppings.nextElementSibling);
 
 //Eventos del DOM
+//Para obtener un listener individual
+// const pepperonni = document.getElementById('champ');
 
+// function mostrarClick(e) {
+//     console.log(e.target.innerText);
+// }
 
+// pepperonni.addEventListener('click', mostrarClick)
 
+//Para agregar listeners multiples con DOM
+const toppings = document.getElementsByClassName('topping');
+
+for (const topping of toppings) {
+    topping.addEventListener('click',
+        (e) => {
+            console.log(e.target.innerText);
+        }
+    )
+}
