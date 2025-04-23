@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lit Elements</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+
+<body>
+  <!-- Se llama a los componentes en el body, con la etiqueta del componente -->
+  <aemv-counter>
+  </aemv-counter>
+  <!-- Agregamos el boton para agregar un modulo nuevo desde nuestro HTML -->
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <button id="addModule" style="text-align: center;">Crear nuevo Modulo</button>
+  </div>
+  <script src="components/aemv-component.js" type="module"></script>
+  <!-- Script que primero localiza el boton, posterior crea el elemento, con appendchild agrega el elemento como hijo a body, modificando el atributo con valor 100 -->
+  <script>
+    document.getElementById('addModule').addEventListener('click', function () {
+      let newCounter = document.createElement('aemv-counter');
+      newCounter.setAttribute('counter', 100);
+      document.body.appendChild(newCounter);
+    })
+  </script>
+</body>
+
+</html>
