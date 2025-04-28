@@ -76,7 +76,6 @@ export class aemvComp extends LitElement {
         text-align: center;
         padding: 10px;
         cursor: pointer;
-        elevation: 3;
       }
 
       input[type="number"]::-webkit-inner-spin-button,
@@ -139,7 +138,7 @@ export class aemvComp extends LitElement {
       ></wired-slider>
       <div class="container-buttons">
         <wired-button @click=${this.increment}>Aumentar</wired-button>
-        <wired-button @click=${this.decrement}>Restar</wired-button>
+        <wired-button @click=${this.decrement}>Restart</wired-button>
       </div>
     `;
   }
