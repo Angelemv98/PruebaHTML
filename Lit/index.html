@@ -10,24 +10,28 @@
 
 <body>
   <!-- Se llama a los componentes en el body, con la etiqueta del componente -->
-  <aemv-counter>
+  <!-- <aemv-counter>
   </aemv-counter>
   <dashboard-component>
-  </dashboard-component>
+  </dashboard-component> -->
+  <rick-morty-component>
+
+  </rick-morty-component>
   <!-- Agregamos el boton para agregar un modulo nuevo desde nuestro HTML -->
-  <div style="display: flex; justify-content: center; align-items: center;">
+  <!-- <div style="display: flex; justify-content: center; align-items: center;">
     <button id="addModule" style="text-align: center;">Crear nuevo Modulo</button>
-  </div>
-  <script src="components/aemv-component.js" type="module"></script>
-  <script src="components/dashboard-component.js" type="module"></script>
+  </div> -->
+  <!-- <script src="components/aemv-component.js" type="module"></script> -->
+  <script src="components/rickAPI/rick-morty-component.js" type="module"></script>
+  <!-- <script src="components/dashboard-component.js" type="module"></script> -->
   <!-- Script que primero localiza el boton, posterior crea el elemento, con appendchild agrega el elemento como hijo a body, modificando el atributo con valor 100 -->
-  <script>
+  <!-- <script>
     document.getElementById('addModule').addEventListener('click', function () {
       let newCounter = document.createElement('aemv-counter');
       newCounter.setAttribute('counter', 100);
       document.body.appendChild(newCounter);
     })
-  </script>
+  </script> -->
 </body>
 
 </html>
